@@ -25,6 +25,7 @@ class MovieCardListView extends StatelessWidget {
           Container(
             height: 250,
             child: ListView.builder(
+              clipBehavior: Clip.none,
               scrollDirection: Axis.horizontal,
               itemCount: movies.length,
               itemBuilder: (context, index) {
